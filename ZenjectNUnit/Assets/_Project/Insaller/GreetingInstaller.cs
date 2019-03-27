@@ -12,5 +12,7 @@ public class GreetingInstaller : MonoInstaller<GreetingInstaller>
        Container.Bind<IGreetings>().To<Greetings>().AsSingle();
 
         Container.BindFactory<GreetingConsumer, GreetingConsumer.Factory>().FromComponentInNewPrefab(greetingConsumerPrefab);
+
+        // next task is to add more stuff for NUnit testing
     }
 }
